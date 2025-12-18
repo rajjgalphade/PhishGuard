@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PhishGuard</title>
+  <style>
+    body {
+      width: 300px;
+      background: #1f2a40;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 15px;
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #00c6ff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #result {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>PhishGuard</h2>
+  <p>Paste a link. I will protect you.</p>
+
+  <input type="text" id="url" placeholder="https://example.com">
+
+  <button id="checkBtn">Check</button>
+
+  <div id="result">Waiting...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
